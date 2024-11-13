@@ -16,7 +16,7 @@ public class testVocalReconizer : MonoBehaviour
     void Start()
     {
         //Create keywords for keyword recognizer
-        keywords.Add("activate", () =>
+        keywords.Add("next", () =>
         {
             // action to be performed when this keyword is spoken
             Renderer renderer = targetObject.GetComponent<Renderer>();
