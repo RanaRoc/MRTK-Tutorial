@@ -6,77 +6,80 @@ using UnityEngine.Video;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    // Référence au composant TMP_Text
+    // Rï¿½fï¿½rence au composant TMP_Text
     public TMP_Text tmpText;
+    [SerializeField] private SoundManager soundManager;
 
-    // Référence au composant VideoPlayer
+    // Rï¿½fï¿½rence au composant VideoPlayer
     public VideoPlayer videoPlayer;
 
-    // Liste de messages à afficher dans TMP
+    // Liste de messages ï¿½ afficher dans TMP
     private List<string> messages = new List<string>
     {
-        "1. Épluchez, épépinez et coupez les pommes en dés.",
-        "2. Placez-en les 3/4 dans une casserole, et garder le reste de coté.",
+        "1. ï¿½pluchez, ï¿½pï¿½pinez et coupez les pommes en dï¿½s.",
+        "2. Placez-en les 3/4 dans une casserole, et garder le reste de cotï¿½.",
         "3. Ajoutez le sucre en poudre, la cannelle, et l'eau.",
-        "4. Faites cuire à feu doux pendant environ 20 min et remuez régulièrement (lancer plein de sous chrono pour dire de remuez)",
-        "5. Préparez la pâte à crumble. Versez la farine et le sucre en poudre dans un saladier",
-        "6. Ajoutez le beurre coupé en dés.",
-        "7. Pétrissez la pâte du bout des doigts jusqu'à obtention d'une pâte granuleuse.",
-        "8. Répartissez la pâte à crumble sur la compote de pommes.",
-        "9. Attendre la fin du chrono (à ignorer si chrono déjà fini).",
-        "10. Versez la compote dans un plat à gratin.",
-        "11. Répartissez la pâte à crumble sur la compote de pommes, ainsi que les morceaux de pommes mis de côté."
+        "4. Faites cuire ï¿½ feu doux pendant environ 20 min et remuez rï¿½guliï¿½rement (lancer plein de sous chrono pour dire de remuez)",
+        "5. Prï¿½parez la pï¿½te ï¿½ crumble. Versez la farine et le sucre en poudre dans un saladier",
+        "6. Ajoutez le beurre coupï¿½ en dï¿½s.",
+        "7. Pï¿½trissez la pï¿½te du bout des doigts jusqu'ï¿½ obtention d'une pï¿½te granuleuse.",
+        "8. Rï¿½partissez la pï¿½te ï¿½ crumble sur la compote de pommes.",
+        "9. Attendre la fin du chrono (ï¿½ ignorer si chrono dï¿½jï¿½ fini).",
+        "10. Versez la compote dans un plat ï¿½ gratin.",
+        "11. Rï¿½partissez la pï¿½te ï¿½ crumble sur la compote de pommes, ainsi que les morceaux de pommes mis de cï¿½tï¿½."
     };
 
-    // Liste de clips vidéo associés à chaque message
+    // Liste de clips vidï¿½o associï¿½s ï¿½ chaque message
     public List<VideoClip> videoClips = new List<VideoClip>();
 
-    // Variable de progression modifiable pour changer le texte et la vidéo
-    public int currentIndex = 0; // Cet index peut être modifié manuellement ou par un autre script
+    // Variable de progression modifiable pour changer le texte et la vidï¿½o
+    public int currentIndex = 0; // Cet index peut ï¿½tre modifiï¿½ manuellement ou par un autre script
 
     void Start()
     {
-        // Vérifie si tmpText est assigné, sinon essaie de le récupérer
+        // Vï¿½rifie si tmpText est assignï¿½, sinon essaie de le rï¿½cupï¿½rer
         if (tmpText == null)
         {
             tmpText = GetComponent<TMP_Text>();
         }
 
-        // Vérifie si videoPlayer est assigné, sinon essaie de le récupérer
+        // Vï¿½rifie si videoPlayer est assignï¿½, sinon essaie de le rï¿½cupï¿½rer
         if (videoPlayer == null)
         {
             videoPlayer = GetComponent<VideoPlayer>();
         }
 
-        // Affiche le premier message et la première vidéo
+        // Affiche le premier message et la premiï¿½re vidï¿½o
         UpdateTextAndVideo();
     }
 
-    // Méthode pour mettre à jour le texte et la vidéo en fonction de currentIndex
+    // Mï¿½thode pour mettre ï¿½ jour le texte et la vidï¿½o en fonction de currentIndex
     public void UpdateTextAndVideo()
     {
-        // Vérifie si l'index est valide
+        // Vï¿½rifie si l'index est valide
         if (currentIndex >= 0 && currentIndex < messages.Count)
         {
-            // Mise à jour du texte
+            // Mise ï¿½ jour du texte
             tmpText.text = messages[currentIndex];
 
-            // Mise à jour de la vidéo (si disponible)
+            // Mise ï¿½ jour de la vidï¿½o (si disponible)
             if (currentIndex < videoClips.Count)
             {
                 videoPlayer.clip = videoClips[currentIndex];
-                videoPlayer.Play();  // Joue la vidéo correspondante
+                videoPlayer.Play();  // Joue la vidï¿½o correspondante
+                soundManager.PlayNextSound();
+
             }
         }
     }
 
-    // Exemple de méthode pour modifier la variable `currentIndex` depuis un autre script ou événement
+    // Exemple de mï¿½thode pour modifier la variable `currentIndex` depuis un autre script ou ï¿½vï¿½nement
     public void ChangeProgress(int newIndex)
     {
         if (newIndex >= 0 && newIndex < messages.Count)
         {
             currentIndex = newIndex;  // Modifie l'index
-            UpdateTextAndVideo();  // Met à jour le texte et la vidéo
+            UpdateTextAndVideo();  // Met ï¿½ jour le texte et la vidï¿½o
         }
     }
 }
