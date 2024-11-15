@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8b1edce2c5ab29b488b419283254e39a
+=======
+guid: f5c776f2dcd72584fad32f260b7f3c96
+>>>>>>> romain/test
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
