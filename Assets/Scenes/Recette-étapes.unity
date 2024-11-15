@@ -328,7 +328,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656279812}
   m_CullTransparentMesh: 1
---- !u!1 &984650861
+--- !u!1 &883354604
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,73 +336,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 984650862}
-  - component: {fileID: 984650864}
-  - component: {fileID: 984650863}
+  - component: {fileID: 883354606}
+  - component: {fileID: 883354605}
   m_Layer: 0
-  m_Name: Image
+  m_Name: TextTestVocal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &984650862
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984650861}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1415693718}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 234, y: 29}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &984650863
+--- !u!114 &883354605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984650861}
+  m_GameObject: {fileID: 883354604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: da77b7bc2a3dccc4faf84bae07aac51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &984650864
-CanvasRenderer:
+  targetObject: {fileID: 1061869806}
+--- !u!4 &883354606
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984650861}
-  m_CullTransparentMesh: 1
+  m_GameObject: {fileID: 883354604}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.413101, y: -10.471707, z: -13.882416}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1061869806
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,35 +480,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061869806}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1219958422
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1219958425}
-  - component: {fileID: 1219958424}
-  - component: {fileID: 1219958423}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!82 &1219958423
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219958422}
+  m_GameObject: {fileID: 1237617027}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 080470dafc0ce8f4abecf7fb76fc5097, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d47145d8a7057d94d8020f458190366c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -630,7 +582,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219958422}
+  m_GameObject: {fileID: 1237617027}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c0d695998d66f14f9523608074e25fc, type: 3}
@@ -638,8 +590,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1219958423}
   audioClips:
-  - {fileID: 8300000, guid: 080470dafc0ce8f4abecf7fb76fc5097, type: 3}
-  - {fileID: 8300000, guid: fca1c2990b8a47c4aa15f6f6994900d8, type: 3}
   - {fileID: 8300000, guid: f854f46e357821d4d8e67457036b046f, type: 3}
   - {fileID: 8300000, guid: df0e75ad0a1c1eb449807b7f2eb5f463, type: 3}
   - {fileID: 8300000, guid: cbe56fa1c6deb9d499dd8b6c6f40fbb8, type: 3}
@@ -655,7 +605,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219958422}
+  m_GameObject: {fileID: 1237617027}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -664,6 +614,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1237617027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219958425}
+  - component: {fileID: 1219958424}
+  - component: {fileID: 1219958423}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1415693715
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +645,7 @@ GameObject:
   - component: {fileID: 1415693716}
   - component: {fileID: 1415693719}
   m_Layer: 0
-  m_Name: Interface Utilisateur
+  m_Name: InterfaceUtilisateur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,7 +712,6 @@ RectTransform:
   - {fileID: 2077683719}
   - {fileID: 656279813}
   - {fileID: 125585468}
-  - {fileID: 984650862}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -767,12 +734,27 @@ MonoBehaviour:
   tmpText: {fileID: 2077683720}
   soundManager: {fileID: 1219958424}
   videoPlayer: {fileID: 656279814}
+  messages:
+  - "1. \uFFFDpluchez, \uFFFDp\uFFFDpinez et coupez les pommes en d\uFFFDs."
+  - "2. Placez-en les 3/4 dans une casserole, et garder le reste de cot\uFFFD."
+  - 3. Ajoutez le sucre en poudre, la cannelle, et l'eau.
+  - "4. Faites cuire \uFFFD feu doux pendant environ 20 min et remuez r\uFFFDguli\uFFFDrement
+    (lancer plein de sous chrono pour dire de remuez)"
+  - "5. Pr\uFFFDparez la p\uFFFDte \uFFFD crumble. Versez la farine et le sucre en
+    poudre dans un saladier"
+  - "6. Ajoutez le beurre coup\uFFFD en d\uFFFDs."
+  - "7. P\uFFFDtrissez la p\uFFFDte du bout des doigts jusqu'\uFFFD obtention d'une
+    p\uFFFDte granuleuse."
+  - "8. Attendre la fin du chrono (\uFFFD ignorer si chrono d\uFFFDj\uFFFD fini)."
+  - "9. Versez la compote dans un plat \uFFFD gratin."
+  - "10. R\uFFFDpartissez la p\uFFFDte \uFFFD crumble sur la compote de pommes, ainsi
+    que les morceaux de pommes mis de c\uFFFDt\uFFFD."
   videoClips:
   - {fileID: 32900000, guid: 85c4403ba8578244ea661f38871e997c, type: 3}
   - {fileID: 32900000, guid: 85c4403ba8578244ea661f38871e997c, type: 3}
   - {fileID: 32900000, guid: 85c4403ba8578244ea661f38871e997c, type: 3}
   - {fileID: 32900000, guid: 85c4403ba8578244ea661f38871e997c, type: 3}
-  currentIndex: 1
+  currentIndex: 0
 --- !u!1001 &1451780154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1868,3 +1850,4 @@ SceneRoots:
   - {fileID: 1415693718}
   - {fileID: 1777422511}
   - {fileID: 1219958425}
+  - {fileID: 883354606}

@@ -22,12 +22,16 @@ public class SoundManager : MonoBehaviour
     // Call this function to play the next sound
     public void PlayNextSound()
     {
-        if (audioClips == null || audioClips.Count == 0 || isPlaying)
-            return;
+        if (audioClips == null || audioClips.Count == 0 || isPlaying){
+                       Debug.Log("No audio clips assigned or already playing a sound");
 
+            return;
+        }
         // Check if there are more clips to play
         if (currentClipIndex < audioClips.Count)
         {
+                        Debug.Log("Supposed to skip");
+
             AudioClip clip = audioClips[currentClipIndex];
             audioSource.clip = clip;
             audioSource.Play();
