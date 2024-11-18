@@ -26,8 +26,7 @@ public class UIScript : MonoBehaviour
         "8. Attendre la fin du chrono (à ignorer si chrono déjà fini).",
         "9. Versez la compote dans un plat à gratin.",
         "10. Répartissez la pâte à crumble sur la compote de pommes, ainsi que les morceaux de pommes mis de côté.",
-        "11. Vous avez terminé la démonstration !",
-        "12. Vous avez terminé la démonstration !"
+        "11. Vous avez terminé la démonstration !"
     };
 
     // Liste de clips vid�o associ�s � chaque message
