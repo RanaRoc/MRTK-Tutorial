@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/test.unity
     guid: 4a4a87b0a1058414a9a756712901c68e
+  - enabled: 1
+    path: "Assets/Scenes/Recette-\xE9tapes.unity"
+    guid: f44bed0a07d1179479ffbf7d1a0c6dad
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 98037ed597c315a4597f88ce4e14e981, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 247c86fe1e8bfe34d8ec855d2669ac75, type: 2}
