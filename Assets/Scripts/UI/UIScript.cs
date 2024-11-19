@@ -19,11 +19,11 @@ public class UIScript : MonoBehaviour
         "1. Epluchez, épépinez et coupez les pommes en dés.",
         "2. Placez-en les 3/4 dans une casserole, et garder le reste de côté.",
         "3. Ajoutez le sucre en poudre, la cannelle, et l'eau.",
-        "4. Faites cuire à feu doux pendant environ 20 min et remuez régulièrement (lancer plein de sous chrono pour dire de remuez)",
+        "4. Faites cuire à feu doux pendant environ 20 min et remuez régulièrement",
         "5. Préparez la pâte à crumble. Versez la farine et le sucre en poudre dans un saladier",
         "6. Ajoutez le beurre coupé en dés.",
         "7. Pétrissez la pâte du bout des doigts jusqu'à obtention d'une pâte granuleuse.",
-        "8. Attendre la fin du chrono (à ignorer si chrono déjà fini).",
+        "8. Attendre la fin de la cuisson de la compote.",
         "9. Versez la compote dans un plat à gratin.",
         "10. Répartissez la pâte à crumble sur la compote de pommes, ainsi que les morceaux de pommes mis de côté.",
         "11. Vous avez terminé la démonstration !"

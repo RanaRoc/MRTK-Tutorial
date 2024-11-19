@@ -16,7 +16,8 @@ public class testVocalReconizer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UI = GameObject.Find("InterfaceUtilisateur").GetComponent<UIScript>();
+        UI = GameObject.Find("Interfacez").GetComponent<UIScript>();
+        Debug.Log(UI);
 
         //Create keywords for keyword recognizer
         keywords.Add("next", () =>
